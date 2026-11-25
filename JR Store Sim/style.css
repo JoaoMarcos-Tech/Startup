@@ -1,0 +1,182 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* direciona ao link clicado de forma suave */
+}
+
+
+
+.btn-primary {
+    background-color: #2196f3;    /* -- Botão do Bootstrap com as cores da loja -- */
+    border-color: #2196f3;
+}
+
+.btn-primary:hover {                 /* -- Botão após passar o cursor do mouse em cima --*/
+    background-color: #0b1b33;
+    border-color: #0b1b33;
+}
+
+/* ----- Cabeçalho ----- */
+
+header {
+    background-color: #0b1b33;
+    color: white;
+    display: flex;               /* coloca os itens lado a lado */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;             /* no celular, os itens quebram de linha */
+    gap: 15px;
+    padding: 20px 50px;
+    border-bottom: 2px solid #2196f3;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #2196f3;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a,
+.link-carrinho {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+.link-carrinho:hover {
+    color: #2196f3;
+}
+
+/* ----- Banner ----- */
+
+.banner {
+    background: linear-gradient(135deg, #0b1b33, #123d70, #0b1b33);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.destaque {
+    display: inline-block;
+    background-color: #2196f3;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.banner p {
+    color: #eaf4ff;
+    font-size: 18px;
+}
+
+.banner img {
+    margin-top: 30px;
+}
+
+/* ----- Catálogo ----- */
+
+.catalogo {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.catalogo h2 {
+    color: #0b1b33;
+    margin-bottom: 10px;
+}
+
+.catalogo > .container > p {
+    margin-bottom: 30px;
+}
+
+/* ----- Cards das camisas ----- */
+
+.produto {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(11, 27, 51, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s; 
+}
+
+.produto:hover {
+    transform: translateY(-6px); 
+}
+
+.produto img {
+    height: 250px;
+    object-fit: contain;  
+}
+
+.produto h5 {
+    color: #0b1b33;
+    font-weight: bold;
+}
+
+.preco {
+    color: #2196f3;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ----- Carrinho ----- */
+
+.area-carrinho {
+    background-color: white;
+    padding: 40px 0;
+}
+
+.area-carrinho h2,
+.area-carrinho h3 {
+    color: #0b1b33;
+}
+
+#total-carrinho {
+    margin: 20px 0;
+}
+
+
+footer {
+    background-color: #0b1b33;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #2196f3;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*adaptação para outros dispositivos, celular */
+
+@media (max-width: 700px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+}
